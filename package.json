@@ -5,7 +5,7 @@
     "description": "Launcher Mincraft custom (crack, premium)",
     "main": "src/app.js",
     "author": "Luuxis",
-    "url": "http://launcher.luuxis.fr/launcherSelvania",
+    "url": "http://greatnet.great-site.net/launcherGN",
     "engines": {
         "node": "^18.x.x"
     },
