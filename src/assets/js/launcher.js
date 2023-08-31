@@ -24,7 +24,7 @@ class Launcher {
         this.config = await config.GetConfig().then(res => res);
         this.news = await config.GetNews().then(res => res);
         this.database = await new database().init();
-        this.createPanels(Login, Home, Settings);
+        this.createPanels(Login, Home, Settings, Account);
         this.getaccounts();
     }
 
