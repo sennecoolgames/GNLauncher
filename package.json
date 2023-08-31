@@ -1,11 +1,11 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
-    "version": "1.3.2",
-    "description": "Launcher Mincraft custom (crack, premium)",
+    "name": "Chicken-Launcher",
+    "preductname": "Chicken Launcher",
+    "version": "1.0.0",
+    "description": "Custom minecraft launcher",
     "main": "src/app.js",
-    "author": "Luuxis",
-    "url": "http://greatnet.great-site.net/launcherGN",
+    "author": "Sennecoolgames",
+    "url": "https://greatnet.000webhostapp.com/launcherGN/",
     "engines": {
         "node": "^18.x.x"
     },
@@ -34,6 +34,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+        "url": "git+https://github.com/sennecoolgames/GNLauncher.git"
     }
 }
