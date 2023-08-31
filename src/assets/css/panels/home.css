@@ -1,14 +1,3 @@
-.bottom-bar-home {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    background: #00000080;
-    display: flex;
-}
-
 .player-head {
     margin: auto 30px;
     background-image: url("../../images/default/setve.png");
@@ -48,28 +37,6 @@
     font-size: 40px;
 }
 
-.play-element {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    height: 100%;
-    color: #F1F1F1;
-    font: normal normal bold 19px/29px Poppins;
-    text-align: center;
-}
-
-.play-btn {
-    top: 10px;
-    width: 160px;
-    height: 37px;
-    border-radius: 20px;
-    border: none;
-    background: #00bd7a;
-    font: normal normal bold 20px/25px Poppins;
-    color: #121212;
-    margin: 15px 0;
-    box-shadow: 0 0 5px #00bd7a;
-}
 
 .download-content {
     position: absolute;
@@ -102,12 +69,6 @@
     border-radius: 10px;
 }
 
-.body-home {
-    display: flex;
-    height: 78vh;
-    margin: 3rem 2rem;
-}
-
 .news-list {
     position: relative;
     overflow: auto;
@@ -131,38 +92,6 @@
 
 .opacity-1 {
     opacity: 1;
-}
-
-.news-header {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 87px;
-    background-color: #292929;
-    border-radius: 10px 10px 0px 0px;
-    transition: color .2s, filter .2s;
-}
-
-.title {
-    position: absolute;
-    font: normal normal bold 27px/40px Poppins;
-    letter-spacing: 0px;
-    color: #E1E1E1;
-    display: flex;
-    position: absolute;
-    text-decoration: none;
-    max-width: calc(100% - 158px);
-    font-weight: 600;
-    font-size: 18px;
-    top: 50%;
-    left: 30px;
-    transform: translate(0, -50%);
-    overflow: hidden;
-    line-height: 25px;
-    align-items: center;
-    height: 3em;
-    transition: color .2s;
 }
 
 .date {
@@ -220,29 +149,6 @@
     width: 65vh;
     padding-left: 1rem;
     background: none;
-}
-
-.server {
-    position: relative;
-    width: 100%;
-    height: 75px;
-    background-color: #292929;
-    border-radius: 10px;
-    transition: opacity 1s;
-    opacity: .4;
-}
-
-.server:hover {
-    transition: opacity 1s;
-    opacity: 1;
-}
-
-.server-img {
-    position: absolute;
-    width: 42px;
-    height: 45px;
-    top: 15px;
-    left: 15px;
 }
 
 .name {
@@ -309,3 +215,160 @@
 .online.off {
     background-color: #FF0409;
 }
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the launcher layout */
+  .launcher {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .player-head {
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%;
+    /* Add player head image as a background */
+  }
+  
+  .play {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .playbtn {
+    flex: 1; /* This property makes the button stretch to fill the remaining space */
+    background: none;
+    border: black;
+    cursor: pointer;
+    text-align: left; /* Adjust this to align the button content as needed */
+  }
+  
+  .version-popup {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    /* Version selection popup styles */
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background: none;
+    color: black;
+    padding: 10px 10px;
+    margin: 0%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    top: -90px;
+    transform: translateX(-10px);
+  }
+  
+  .version-option {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .version-option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .settingsbtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  
+  .news {
+    width: 60%;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #ffffff34;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    
+  }
+  
+  .main-btn {
+    margin-bottom: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    height: 20%;
+    cursor: pointer;
+  }
