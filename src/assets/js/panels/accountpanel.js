@@ -10,8 +10,8 @@ const dataDirectory = process.env.APPDATA || (process.platform == 'darwin' ? pro
 
 const os = require('os');
 
-class Account {
-    static id = "account";
+class Accountpanel {
+    static id = "accountpanel";
     async init(config) {
         this.config = config;
         this.database = await new database().init();
@@ -268,4 +268,4 @@ class Account {
         }
     }
 }
-export default Account;
+export default Accountpanel;

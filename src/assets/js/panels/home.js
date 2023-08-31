@@ -225,7 +225,7 @@ class Home {
 
     initAccountButton() {
         document.querySelector('.player-head').addEventListener('click', () => {
-            changePanel('Account');
+            changePanel('Accountpanel');
         });
     }
 
