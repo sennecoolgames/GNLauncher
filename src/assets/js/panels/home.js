@@ -23,7 +23,8 @@ class Home {
         this.initNews();
         this.initLaunch();
         this.initStatusServer();
-        this.initBtn();
+        this.initSetBtn();
+        this.initAccBtn();
     }
 
     async initNews() {
@@ -216,9 +217,15 @@ class Home {
         }
     }
 
-    initBtn() {
+    initSetBtn() {
         document.querySelector('.settings-btn').addEventListener('click', () => {
             changePanel('settings');
+        });
+    }
+
+    initAccBtn() {
+        document.querySelector('.player-head').addEventListener('click', () => {
+            changePanel('account');
         });
     }
 
