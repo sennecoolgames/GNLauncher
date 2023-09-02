@@ -218,7 +218,7 @@ class Home {
     }
 
     initSettingsButton() {
-        document.querySelector('.settingsbtn').addEventListener('click', () => {
+        document.querySelector('.settings-btn').addEventListener('click', () => {
             changePanel('Settings');
         });
     }
